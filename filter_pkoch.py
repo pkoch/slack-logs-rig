@@ -3,7 +3,6 @@ import json
 import os
 import sys
 from pathlib import Path
-from glob import glob
 
 
 def find(list_, test):
@@ -24,7 +23,7 @@ def get_pkochs_user_id(path):
 
 def filter_stuff_out(path):
     u = get_pkochs_user_id(path)
-    for fn in glob(str(path / '*' / '*.json')):
+    for fn in path.glob('*/*.json'):
         f = open(fn, 'r+')
 
         lines = [
