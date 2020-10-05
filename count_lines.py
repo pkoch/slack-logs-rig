@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import json
-import sys
 from datetime import date
 from pathlib import Path
 
@@ -42,6 +41,7 @@ def print_stuff(stuff):
 
 
 def count_stuff(path):
+    path = Path(path)
     result = {}
 
     for fn in path.glob('*/*.json'):
@@ -59,5 +59,6 @@ def count_stuff(path):
 
 
 if __name__ == '__main__':
-    stuff = count_stuff(Path(sys.argv[1]))
+    import sys
+    stuff = count_stuff(sys.argv[1])
     print_stuff(stuff)
