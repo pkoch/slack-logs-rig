@@ -21,6 +21,11 @@ IGNORED_CHANNELS = (
     'summer-internships',
     'programação',
     'blockchain',
+    'lookers_and_spies',
+    'random',
+    'engineering-rituals',
+    'id-deployments',
+    'random-engineering',
 )
 
 
