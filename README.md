@@ -10,4 +10,4 @@ Run `filter_pkoch.py` so that I only see my own log lines.
 
 Run `./count_lines.py target/` to check for the most active channel in each week.
 
-For a pretty chart, run `./count_lines.py target/ > www/set-variables.js` and `python -m http.server 8000 -d www`
+For a pretty chart, run `./highcharts_count_lines.py target/ > www/set-variables.js` and `python -m http.server 8000 -d www`
